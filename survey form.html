@@ -1,0 +1,206 @@
+<h1 id="title">VIDEO GAMES SURVEY FORM</h1>
+<div id="form-outer">
+  <p id="description">
+    Let us know about your experience with Video games</p>
+    <form id="survey-form">
+        <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+
+      <div class="rowTab">
+      <div class="labels">
+      <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+      <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+      </div>
+      </div>
+
+      <div class="rowTab">
+      <div class="labels">
+      <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+      <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Enter your age" required>
+      </div>
+</div>
+
+      <div class="rowTab">
+      <div class="labels">
+      <label for="favRole">* What is your favorite game to play?</label>
+      </div>
+
+      <div class="rightTab">
+      <select id="dropdown" name="currentPos" class="dropdown">
+        <option value>Select an option</option>
+        <option value="top"> God of War</option>
+        <option value="SM"> Shadow of Mordor</option>
+            <option value="PES">Pro Evolution Soccer</option>
+        <option value="Gta">Grand Theft Auto</option>
+        <option value="Fifa">FIFA</option>
+        <option value="none">I don't have a preference</option>
+        </select>
+        </div>
+        </div>
+
+
+        <div class="rowTab">
+        <div class="labels">
+        <label for="userRating">* Would you play Video Games for Weeks if given the Chance?</label>
+        </div>
+        <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" required></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+        </div>
+
+
+        </div>
+        <div class="rowTab">
+        <div class="labels">
+        <label for="favorite">* Which other games have you played?: </label>
+        </div><div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown" required>
+          <option selected value>Select an option</option>
+        <option value="Dmc">Devil may Cry</option>
+        <option value="Cod">Call of Duty</option>
+        <option value="SPD">Spiderman</option>
+        <option value="AsC">Assasins creed</option>
+        </select>
+        </div>
+        </div>
+
+        <div class="rowTab">
+        <div class="labels">
+        <label for="preferences"> *Favorite Game (Check all that apply):</label>
+        </div>
+        <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">God of war</label></li>
+          <li class="checkbox"><input name="prefer" type="checkbox" class="userRatings">shadow of mordor</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">fifa</label></li>
+        <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">gta</label></li>
+        <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">devil may cry</label></li>
+         </ul>
+        </div>
+        </div>
+
+        <div class="rowTab">
+        <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+        </form>
+        </div>
+
+
+        </div>
+        <footer>
+        <p>Created by olushola G Akintayo</p>
+        </footer>
+
+<!--- css begins here --->
+
+<style>
+  html, body {
+    text-align: center;
+    font-family:Helvetica, sans-serif;
+    min-width: 320px;
+    padding-top: 12px;
+}
+
+  #form-outer{
+    background-color: #fff;
+    width: 75%;
+    max-width: 750px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+  #description {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    }
+
+    .labels {
+      display: inline-block;
+      text-align: right;
+      width: 40%;
+      padding: 5px;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+
+
+    .rightTab {
+      display: inline-block;
+      text-align: left;
+      width: 48%;
+      vertical-align: middle;
+    }
+
+.input-field{
+  height: 20px;
+  width: 280px;
+  padding: 7px 7px 9px 7px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+    border-radius: 3px;
+}
+
+
+  #userAge {
+    width: 40px;
+  }
+
+  .userRatings,
+  input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+
+#submit {
+  background-color: #222222;
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+  .dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+  }
+
+  .radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+          </style>

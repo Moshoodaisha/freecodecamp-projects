@@ -1,0 +1,117 @@
+<div class="main-body">
+  <nav id="navbar">
+    <header> REAL MADRID </header>
+    <a href="#History" class="nav-link"> History </a>
+    <a href="#Ground" class="nav-link"> Ground </a>
+    <a href="#Rivalries" class="nav-link">Rivalries</a>
+    <a href="#Finances&ownership" class="nav-link"> Finances and ownership </a>
+    <a href="#Popular-Culture" class="nav-link"> Popular Culture </a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="History">
+      <header> History </header>
+      <p>Real Madrid Club de Fútbol (Spanish pronunciation: [reˈal maˈðɾið ˈkluβ ðe ˈfuðβol] "Royal Madrid Football Club"), commonly referred to as Real Madrid is a Spanish professional football club based in Madrid.Founded on 6 March 1902 as the Madrid
+        Football Club, the club has traditionally worn a white home kit since inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem.</p>
+      <p>The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid's members (socios) have owned and operated the club throughout its history.</p>
+    </section>
+
+    <section class="main-section" id="Ground">
+      <header> Ground </header>
+      <p>After moving between grounds, the team moved to the Campo de O'Donnell in 1912, which remained its home ground for 11 years. After this period, the club moved for one year to the Campo de Ciudad Lineal, a small ground with a capacity of 8,000 spectators.
+        After that, Real Madrid moved its home matches to Estadio Chamartín, which was inaugurated on 17 May 1923 with a match against Newcastle United.</p>
+      <p> In this stadium, which hosted 22,500 spectators, Real Madrid celebrated its first Spanish league title. After some successes, the 1943 elected president Santiago Bernabéu decided that the Estadio Chamartín was not big enough for the ambitions of
+        the club, and thus a new stadium was built and was inaugurated on 14 December 1947. This was the Santiago Bernabéu Stadium as it is known today, although it did not acquire the present name until 1955.[30] The first match at the Bernabéu was played
+        between Real Madrid and the Portuguese club Belenenses and won by Los Blancos, 3–1, the first goal being scored by Sabino Barinaga.
+      </p>
+      <p>The capacity has changed frequently, peaking at 120,000 after a 1953 expansion.Since then, there have been a number of reductions due to modernizations (the last standing areas were removed in 1998–99 in response to UEFA regulations which forbids
+        standing at matches in UEFAcompetitions), countered to some extent by expansions.</p>
+      <p> The latest capacity is 81,044 spectators. A plan to add a retractable roof has been announced.Real Madrid has the fourth-highest of the average attendances of European football clubs, behind only Borussia Dortmund, Barcelona and Manchester United.</p>
+    </section>
+
+    <section class="main-section" id="Rivalries">
+      <header>Rivalries </header>
+      <h3> EL CLASSICO </h3>
+      <p> There is often a fierce rivalry between the two strongest teams in a national league, and this is particularly the case in La Liga, where the game between Real Madrid and Barcelona is known as "The Classic" (El Clásico). From the start of national
+        competitions.
+      </p>
+      <p> The clubs were seen as representatives of rival regions in Spain, Catalonia and Castile, as well as of the two cities. The rivalry reflects what many regard as the political and cultural tensions felt between Catalans and the Castilians, seen by
+        one author as a re-enactment of the Spanish Civil War.[164] Over the years, the record from Real Madrid and Barcelona is 81 victories for Madrid, 76 victories for Barcelona, and 39 draws. The biggest Heroes in El-classico are:</p>
+      <ul>
+        <li> Messi </li>
+        <li> Ronaldo </li>
+        <li> Raul </li>
+        <li> Di stefano
+          <li>
+            <li> Ronaldinho </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Finances and ownership">
+      <header> Finances and ownership </header>
+      <p>It was under Florentino Pérez's first presidency (2000–2006) that Real Madrid started its ambition of becoming the world's richest professional football club. The club ceded part of its training grounds to the city of Madrid in 2001, and sold the
+        rest to four corporations: Repsol YPF, Mutua Automovilística de Madrid, Sacyr Vallehermoso and OHL. The sale eradicated the club's debts, paving the way for it to buy the world's most expensive players, such as Zinedine Zidane, Luís Figo, Ronaldo
+        and David Beckham.</p>
+      <p>The city had previously rezoned the training grounds for development, a move which in turn increased their value, and then bought the site. The European Commission started an investigation into whether the city overpaid for the property, to be considered
+        a form of state subsidy.</p>
+    </section>
+
+    <section class="main-section" id="Popular-Culture">
+      <header> Popular Culture </header>
+      <p>Real Madrid was the featured club in the second installment of the Goal! football movie trilogy, Goal! 2: Living the Dream... (2007). The film follows former Newcastle United star Santiago Muñez as he is first scouted, and then signed by Real Madrid
+        for the 2005–06 season.</p>
+      <p> The film's creators wanted to put emphasis on the changes in Muñez's life after his move to Madrid. Production was done with the full support of UEFA, allowing the film crew to use many real life players in cameo roles. Real Madrid squad members
+        featured in the film included Iker Casillas, Zinedine Zidane, David Beckham, Ronaldo, Roberto Carlos, Raúl, Sergio Ramos, Robinho, Michael Owen, Míchel Salgado, Júlio Baptista, Steve McManaman and Iván Helguera. Non-Real Madrid players to make
+        cameo appearances included Ronaldinho, Thierry Henry, Lionel Messi, Samuel Eto'o, Andrés Iniesta, Pablo Aimar, Freddie Ljungberg, Cesc Fàbregas and Santiago Cañizares. In the film, both Florentino Pérez and Alfredo Di Stéfano presented the fictional
+        player Muñez to the club after his signing. </p>
+
+    </section>
+  </main>
+</div>
+
+
+<style>
+div.main-body{
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  grid-template-area: "navbar mainContent"
+    grid-gap: 20px;
+  line-height: 1.3em;
+
+}
+
+nav#navbar{
+  grid-area: navbar;
+  position: fixed;
+}
+
+nav#navbar a{
+  display: block;
+  border: 2px solid blue;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+main#main-doc{
+  grid-area: mainContent;
+  }
+
+header{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px){
+  div.main-body{
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent"
+  }
+
+  nav#navbar{
+    position: inherit;
+  }
+}
+
+</style>
